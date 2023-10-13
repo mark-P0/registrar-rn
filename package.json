@@ -1,0 +1,65 @@
+{
+    "name": "elements2",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "start": "react-native start",
+        "test": "jest",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+        "android-eject": "react-native eject",
+        "android-rebuild-force": "rmdir /s /q android && react-native eject && react-native run-android",
+        "android-clean": "cd android && gradlew --stop && gradlew clean && gradlew cleanBuildCache",
+        "android-gradle-stop": "cd android && gradlew --stop"
+    },
+    "dependencies": {
+        "@react-native-community/masked-view": "^0.1.10",
+        "@react-navigation/bottom-tabs": "^5.11.8",
+        "@react-navigation/material-bottom-tabs": "^5.3.14",
+        "@react-navigation/material-top-tabs": "^5.3.14",
+        "@react-navigation/native": "^5.9.3",
+        "cheerio": "^1.0.0-rc.5",
+        "react": "16.13.1",
+        "react-native": "0.63.4",
+        "react-native-eject": "^0.1.2",
+        "react-native-elements": "^3.2.0",
+        "react-native-gesture-handler": "^1.10.1",
+        "react-native-paper": "^4.7.2",
+        "react-native-reanimated": "^1.13.2",
+        "react-native-safe-area-context": "^3.1.9",
+        "react-native-screens": "^2.17.1",
+        "react-native-vector-icons": "^8.0.0",
+        "superagent": "^6.1.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.8.4",
+        "@babel/runtime": "^7.8.4",
+        "@react-native-community/eslint-config": "^1.1.0",
+        "@types/cheerio": "^0.22.27",
+        "@types/jest": "^25.2.3",
+        "@types/react-native": "^0.63.2",
+        "@types/react-test-renderer": "^16.9.2",
+        "@types/superagent": "^4.1.10",
+        "babel-jest": "^25.1.0",
+        "eslint": "^6.5.1",
+        "jest": "^25.1.0",
+        "metro-react-native-babel-preset": "^0.59.0",
+        "react-test-renderer": "16.13.1",
+        "typescript": "^3.8.3"
+    },
+    "resolutions": {
+        "@types/react": "^16"
+    },
+    "jest": {
+        "preset": "react-native",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js",
+            "jsx",
+            "json",
+            "node"
+        ]
+    }
+}
